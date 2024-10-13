@@ -49,6 +49,36 @@ Ensure you have the following installed on your system:
 - MongoDB (optional)
 - Razorpay Account
 
+### Step-by-Step Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sangeetha-Kamaraj/Razorpay-integration.git
+   cd razorpay-mern-integration
+   
+2. Install dependencies for both the backend and frontend:
+   ```bash
+   #Install backend dependencies
+   cd backend
+   npm install
+   #Install frontend dependencies
+   cd ../frontend
+   npm install
+
+3. Create a .env file in the backend folder and add your Razorpay credentials:
+```
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+```
+4. Run the backend server:
+```
+cd backend
+npm start
+```
+5. Run the frontend React app:
+```
+cd ../frontend
+npm start
 ```
 
 ## Environment Variables
@@ -62,7 +92,7 @@ Note: Do not share your secret key publicly.
 ## Usage
 Running the Application
 Once both the backend and frontend are running, you can open the app in your browser at
-`http://localhost:5000`
+`http://localhost:3000`
 
 **Payment Process**
 - Users can click on the "Pay Now" button, which will trigger the Razorpay checkout.
@@ -133,3 +163,6 @@ const handlePayment = async () => {
   razorpay.open();
 };
 ```
+
+
+<h2 align="center"> Happy Learning! </h2>
